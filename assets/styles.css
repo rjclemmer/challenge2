@@ -1,0 +1,14 @@
+header{
+    display: block;
+    background-color:blueviolet;
+}
+
+nav{
+    display: flex;
+}
+
+nav li{
+    color:orange;
+    display:flex;
+    justify-content: flex-end;
+}

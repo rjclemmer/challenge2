@@ -8,6 +8,12 @@ header{
     background-color:blueviolet;
 }
 
+a{
+    background-color: blueviolet;
+    text-decoration: none;
+}
+
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -30,64 +36,108 @@ nav li{
     text-decoration: none;
 }
 
-img{
-    height: 300px;
-    width:300px;
-}
-
-
-
 .containerHeader{
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: blueviolet;
-}
-
-.container1{
-    height: 25%;
-    width: 75%;
     text-align: center;
-}
-
-.container2{
-    height: 100%;
-    width: 25%;
-    text-align: right;
 }
 
 footer{
     display: flex;
-    flex:wrap;
-    justify-content:space-around;
+    flex-direction: row;
+    justify-content:space-evenly;
     background-color: blueviolet;
+    width: 100%;
 }
 
 footer p{
     background-color: blueviolet;
 }
+.imgSmall{
+    height: 300px;
+    width:300px;
+    
+}
 
+.imgBig{
+    height:500px;
+    width: 500px;
+}
+
+main p{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+figure img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+
+ .container1{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-items: center;
+   
+} /*
+   .container3{
+    height: 500px;
+    width: 500px;
+    align-items: center;
+   
+}  
+
+/* .container3 .img{
+    height: 600px;
+    width: 600px;
+} */
+
+ .grid{ 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+   
+}
+
+
+ 
 .padding{
     background-color: blueviolet;
     padding: 15px;
 }
 
+/* .paddingBottom{
+    padding-bottom: 50px;
+}
+
 .container {
     position: relative;
     width: 50%;
-  }
-  
-  /* Make the image responsive */
+  } 
+   Make the image responsive
   .container img {
     width: 100%;
     height: auto;
   }
-  
-  /* Style the button and place it in the middle of the container/image */
-  .container .btn {
+   */
+  /* Style the button and place it in the middle of the container/image  */
+.container1 .btn {
     position: absolute;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     background-color: #555;
@@ -99,6 +149,24 @@ footer p{
     border-radius: 5px;
   }
   
-  .container .btn:hover {
-    background-color: black;
+  .container1 .btn:hover {
+    background-color: black; 
+  } 
+
+  .container2 .btn {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
   }
+  
+  .container2 .btn:hover {
+    background-color: black; 
+  } 
+   

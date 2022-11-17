@@ -89,6 +89,7 @@ figure img{
 
 
  .container1{
+    position: relative;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -108,6 +109,7 @@ figure img{
 } */
 
  .grid{ 
+   
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -138,35 +140,52 @@ figure img{
   /* Style the button and place it in the middle of the container/image  */
 .container1 .btn {
     position: absolute;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     background-color: #555;
     color: white;
     font-size: 16px;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
+    border-radius: 5px; 
+    bottom: 20px;
+    left: 50px;
+    height: 100px;
+    width: 200px;
   }
   
   .container1 .btn:hover {
-    background-color: black; 
+    background-color: white; 
+    color: black;
   } 
+
+  .container2{
+    position: relative;
+  }
 
   .container2 .btn {
     position: absolute;
+   
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     background-color: #555;
     color: white;
-    font-size: 16px;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
     border-radius: 5px;
+    top: 100px;
+    right: 100px;
+    height: 100px;
+    width: 200px;
+    
   }
   
   .container2 .btn:hover {
-    background-color: black; 
+    background-color: white; 
+    color: black;
   } 
    
+
+  @media screen and (max-width: 992px) {
+
+    
+  }
+
+  @media screen and (max-width: 768px) {
+    
+    
+}

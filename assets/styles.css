@@ -36,6 +36,11 @@ nav li{
     text-decoration: none;
 }
 
+nav li:hover{
+    font-size: 35px;
+    
+}
+
 .containerHeader{
     display: flex;
     justify-content: space-between;
@@ -52,6 +57,13 @@ footer{
     width: 100%;
 }
 
+footer a{
+    margin-top: 15px;
+}
+
+footer a:hover{
+    font-size: 25px;
+}
 footer p{
     background-color: blueviolet;
 }
@@ -66,11 +78,25 @@ footer p{
     width: 500px;
 }
 
+/* #imgHead{
+    height:546px;
+    width:820.5px;
+} */
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
 main p{
-    margin-left: 200px;
-    margin-right: 200px;
+    /* margin-left: 200px;
+    margin-right: 200px; */
+    display: flex;
+    flex-wrap: wrap;
 }
 
+aside:hover{
+    background-color: white;
+}
 figure img{
     display: block;
     margin-left: auto;
@@ -80,6 +106,7 @@ figure img{
 
 
 .container{
+    position: relative;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -89,55 +116,16 @@ figure img{
 
 
  .container1{
-    position: relative;
+    
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     align-items: center;
-   
-} /*
-   .container3{
-    height: 500px;
-    width: 500px;
-    align-items: center;
-   
-}  
-
-/* .container3 .img{
-    height: 600px;
-    width: 600px;
-} */
-
- .grid{ 
-   
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-   
+    /* height:546px; */
+    width:75%;
+    flex-shrink:2 ;
 }
 
-
- 
-.padding{
-    background-color: blueviolet;
-    padding: 15px;
-}
-
-/* .paddingBottom{
-    padding-bottom: 50px;
-}
-
-.container {
-    position: relative;
-    width: 50%;
-  } 
-   Make the image responsive
-  .container img {
-    width: 100%;
-    height: auto;
-  }
-   */
-  /* Style the button and place it in the middle of the container/image  */
 .container1 .btn {
     position: absolute;
     background-color: #555;
@@ -155,11 +143,15 @@ figure img{
     color: black;
   } 
 
-  .container2{
+.container2{
     position: relative;
-  }
+    width:50%;
+    /* justify-content: space-evenly; */
 
-  .container2 .btn {
+}
+
+
+.container2 .btn {
     position: absolute;
    
     transform: translate(-50%, -50%);
@@ -167,17 +159,68 @@ figure img{
     background-color: #555;
     color: white;
     border-radius: 5px;
-    top: 100px;
-    right: 100px;
+    top: 75px;
+    right: 225px;
     height: 100px;
     width: 200px;
-    
-  }
+    }
   
-  .container2 .btn:hover {
+.container2 .btn:hover {
     background-color: white; 
     color: black;
   } 
+
+.projects{
+    flex:4;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+  }
+ /*
+   .container3{
+    height: 500px;
+    width: 500px;
+    align-items: center;
+   
+}  
+
+/* .container3 .img{
+    height: 600px;
+    width: 600px;
+} */
+
+ .grid{ 
+   
+    display: flex;  
+    align-items: center;
+ }
+
+   
+
+
+
+ 
+.padding{
+    background-color: blueviolet;
+    padding: 15px;
+}
+
+.paddingImg{
+    background-color: blueviolet;
+    padding: 25px;
+
+}
+
+.padding:hover{
+    background-color:goldenrod;
+}
+
+.paddingBottom{
+    padding-bottom: 50px;
+}
+
+
+  
    
 
   @media screen and (max-width: 992px) {
@@ -186,6 +229,14 @@ figure img{
   }
 
   @media screen and (max-width: 768px) {
+    main,   
+    nav li{
+    flex-direction:column;
+    }
+
+    .projects{
+        flex-direction: column;
+    }
     
     
 }

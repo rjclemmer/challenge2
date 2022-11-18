@@ -4,6 +4,7 @@ I have created a site that an employer can view a portfolio of work samples. The
 
 ## Link
 
+https://rjclemmer.github.io/challenge2/
 
 
 ## Screenshots 
